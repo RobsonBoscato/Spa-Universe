@@ -69,8 +69,17 @@ nav a:nth-child(2) {
 #titulo {
   font-weight: 700;
   font-size: 4.8rem;
-  line-height: 125%;
+  line-height: 6rem;
   color: #e1e1e6;
+}
+
+#secondary-page {
+  background: url(./assets/backgrounds/mountains-universe-2.png);
+  --font-color: yellow;
+}
+
+#titulo2 {
+  align-items: left;
 }
 
 button {
@@ -91,4 +100,13 @@ button {
 button:hover {
   background-color: #ffffff;
   color: #02799d;
+}
+
+span {
+  font-family: Roboto;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
 }
