@@ -13,6 +13,8 @@ export class Router {
     window.history.pushState({}, '', event.target.href);
 
     this.handle();
+
+    this.configPage(event.target.pathname);
   }
 
   handle() {
@@ -22,8 +24,25 @@ export class Router {
 
     fetch(route)
       .then(data => data.text())
+      //o data foi usado como html abaixo.
       .then(html => {
         document.querySelector('#page').innerHTML = html;
       });
+  }
+
+  configPage(event) {
+    if (event === '/universe') {
+      document.body.classList.remove('explore-page');
+      document.body.classList.remove('home');
+      document.body.classList.add('universe-page');
+    }
+    if (event === '/exploration') {
+      document.body.classList.remove('universe-page');
+      document.body.classList.remove('home');
+      document.body.classList.add('explore-page');
+    }
+    if (event === '/') {
+      document.body.classList.add('home');
+    }
   }
 }

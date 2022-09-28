@@ -9,6 +9,10 @@
   --font-primary: 'Roboto', sans-serif;
   --font-color: #ffffff;
   --bd-image: url(./assets/backgrounds/mountains-universe-1.png);
+  --div-pos: center;
+}
+html {
+  height: 100%;
 }
 
 body {
@@ -16,7 +20,7 @@ body {
   color: var(--font-color);
   font-weight: 400;
   background: var(--bd-image);
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-color: #ffffff;
   background-size: cover;
@@ -49,7 +53,7 @@ nav a:nth-child(1) {
   margin-left: 7.2rem;
 }
 
-nav a:nth-child(2) {
+nav a:hover {
   font-weight: 700;
   font-size: 2.4rem;
   color: #ffffff;
@@ -59,7 +63,7 @@ nav a:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: var(--div-pos);
 
   margin: 20rem;
   gap: 2.4rem;
@@ -71,15 +75,62 @@ nav a:nth-child(2) {
   font-size: 4.8rem;
   line-height: 6rem;
   color: #e1e1e6;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  padding-top: -3rem;
 }
 
-#secondary-page {
+.universe-page {
   background: url(./assets/backgrounds/mountains-universe-2.png);
-  --font-color: yellow;
+
+  background-color: #ffffff;
+  --div-pos: center;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --div-pos: flex-start;
 }
 
-#titulo2 {
-  align-items: left;
+.explore-page {
+  background: url(./assets/backgrounds/mountains-universe-3.png);
+
+  background-color: #ffffff;
+  --div-pos: center;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  --div-pos: flex-start;
+}
+
+.home {
+  background: url(./assets/backgrounds/mountains-universe-1.png);
+
+  background-color: #ffffff;
+  --div-pos: center;
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error-page {
+  background: url('https://webinsider.com.br/wp-content/uploads/2019/01/Erro-404-1-1-1024x645.jpg');
+
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: #e2a24d;
+  background-size: cover;
+  position: inherit;
+  z-index: -1;
+  --div-pos: flex-start;
 }
 
 button {
@@ -88,6 +139,7 @@ button {
   line-height: 2.4rem;
   width: 195px;
   height: 48px;
+  margin: 0 auto;
   align-items: center;
 
   color: #ffffff;
@@ -102,11 +154,21 @@ button:hover {
   color: #02799d;
 }
 
+#secondary-page {
+  max-width: 65rem;
+  max-height: 20rem;
+  margin-top: -10%;
+}
+
 span {
-  font-family: Roboto;
+  margin-top: 2rem;
+
+  width: 65rem;
+  height: 20rem;
+
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0em;
-  text-align: left;
+  color: #e1e1e6;
 }

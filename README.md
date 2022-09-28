@@ -7,7 +7,10 @@ Detalhamento das etapas realizadas:
 <ul>
   <li>Estruturação HTML</li>
   <li>Ajuste e estilo CSS</li>
-  <li></li>
-  <li></li>
+  <li>criado rotas, e mudanças dinamicamente via js</li>
+  <li>Modularizado o código</li>
+  <li>Finalizado CSS dinâmicamente</li>
   <li></li>
 </ul>
+
+<small>Necessário uso do Node.JS para funcionar os links diretos via URL </small>
