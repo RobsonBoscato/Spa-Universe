@@ -7,6 +7,7 @@ export class Router {
 
   route(event) {
     event = event || window.event;
+    console.log(event.target);
     event.preventDefault();
     // devido ao preventDefault, preciso fazer manualmente as mudanças de rota;
 
@@ -15,6 +16,7 @@ export class Router {
     this.handle();
 
     this.configPage(event.target.pathname);
+    console.log('event');
   }
 
   handle() {
@@ -28,6 +30,7 @@ export class Router {
       .then(html => {
         document.querySelector('#page').innerHTML = html;
       });
+    console.log('handle');
   }
 
   configPage(event) {
@@ -43,6 +46,7 @@ export class Router {
     }
     if (event === '/') {
       document.body.classList.add('home');
+      console.log('page');
     }
   }
 }

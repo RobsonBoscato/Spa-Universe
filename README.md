@@ -9,8 +9,7 @@ Detalhamento das etapas realizadas:
   <li>Ajuste e estilo CSS</li>
   <li>criado rotas, e mudanças dinamicamente via js</li>
   <li>Modularizado o código</li>
-  <li>Finalizado CSS dinâmicamente</li>
-  <li></li>
+  <li>Finalizado CSS dinâmicamente, navbar, and button</li>
 </ul>
 
 <small>Necessário uso do Node.JS para funcionar os links diretos via URL </small>

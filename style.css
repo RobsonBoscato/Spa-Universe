@@ -40,7 +40,7 @@ nav {
   align-items: center;
 
   gap: 5.2rem;
-  padding: 5rem;
+  padding: 8rem;
 }
 
 nav a {
@@ -54,6 +54,12 @@ nav a:nth-child(1) {
 }
 
 nav a:hover {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+#menu.selected {
   font-weight: 700;
   font-size: 2.4rem;
   color: #ffffff;
@@ -80,7 +86,8 @@ nav a:hover {
   padding-top: -3rem;
 }
 
-.universe-page {
+.universe-page,
+.explore-page {
   background: url(./assets/backgrounds/mountains-universe-2.png);
 
   background-color: #ffffff;
@@ -97,15 +104,9 @@ nav a:hover {
 .explore-page {
   background: url(./assets/backgrounds/mountains-universe-3.png);
 
-  background-color: #ffffff;
-  --div-pos: center;
-
-  height: 100%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  --div-pos: flex-start;
 }
 
 .home {
@@ -133,23 +134,25 @@ nav a:hover {
   --div-pos: flex-start;
 }
 
-button {
+.button {
   font-size: 1.4rem;
   font-weight: 700;
-  line-height: 2.4rem;
-  width: 195px;
-  height: 48px;
+  line-height: 4.5rem;
+  width: 20rem;
+  height: 5rem;
   margin: 0 auto;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
 
   color: #ffffff;
   background-color: transparent;
 
   border: 2px solid #ffffff;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background-color: #ffffff;
   color: #02799d;
 }
@@ -171,4 +174,8 @@ span {
   line-height: 3rem;
   letter-spacing: 0em;
   color: #e1e1e6;
+}
+
+h1 {
+  font-size: 5rem;
 }
